@@ -127,5 +127,7 @@ end
 
 
 def checkout(cart, coupons)
-  
+  conslolidated_cart = consolidate_cart (cart)
+  couponed_cart = apply_coupons(cart)
+  clearnced_cart = apply_clearance(cart)
 end
